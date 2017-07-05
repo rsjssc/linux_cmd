@@ -1,0 +1,16 @@
+# check you linux distribution
+cat /etc/*-release
+
+# check linux kernel version
+uname -a
+
+# change hostname without restart on centos 6.6 with root
+1.vi /etc/sysconfig/network
+change HOSTNAME=${your hostname}
+2.vi /etc/hosts
+add ${your hostname} after the ip address
+3.service network restart
+just relogin
+
+
+
